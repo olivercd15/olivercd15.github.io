@@ -1,67 +1,36 @@
-// Variables
+let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
 
-let nav = document.getElementById('nav');
-let menu = document.getElementById('enlaces');
-let abrir = document.getElementById('open');
-let botones = document.getElementsByClassName('btn-header');
-let cerrado = true;
 
-function menus(){
-    let Desplazamiento_Actual = window.pageYOffset;
-
-    if(Desplazamiento_Actual <= 300){
-        nav.classList.remove('nav2');
-        nav.className = ('nav1');
-        nav.style.transition = '1s';
-        menu.style.top = '80px';
-        abrir.style.color = '#fff';
-    }else{
-        nav.classList.remove('nav1');
-        nav.className = ('nav2');
-        nav.style.transition = '1s';
-        menu.style.top = '100px';
-        abrir.style.color = '#000';
-    }
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
 }
 
-function apertura(){
-    if(cerrado){
-        menu.style.width = '70vw';
-        cerrado = false;
-    }else{
-        menu.style.width = '0%';
-        menu.style.overflow = 'hidden';
-        cerrado = true;
-    }
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
 }
 
-window.addEventListener('load', function(){
-    $('#onload').fadeOut();
-    $('body').removeClass('hidden');
-    menus();
+// año actual
+document.addEventListener("DOMContentLoaded", function() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
 });
-window.addEventListener('click',function(e){
-    console.log(e.target);
-    if(cerrado==false){
-        let span = document.querySelector('span');
-        if(e.target !== span && e.target !== abrir){
-            menu.style.width = '0%';
-            menu.style.overflow = 'hidden';
-            cerrado = true;
-        }
+
+
+// Mostrar/Ocultar el botón de desplazamiento hacia arriba con transición
+window.onscroll = function() {
+    var scrollTopButton = document.getElementById("scrollTopButton");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopButton.classList.add("show");
+    } else {
+        scrollTopButton.classList.remove("show");
     }
-});
-window.addEventListener('scroll', function(){
-    console.log(window.pageYOffset);
-    menus();
-});
-window.addEventListener('resize', function(){
-    if(screen.width>= 700){
-        cerrado = true;
-        menu.style.removeProperty('overflow');
-        menu.style.removeProperty('width');
-    }
-});
-abrir.addEventListener('click', function(){
-    apertura();
-});
+};
+
+// Función para desplazarse hacia arriba
+document.getElementById("scrollTopButton").onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};

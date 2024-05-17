@@ -1,211 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Proyecto Finanzas</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>NSoft</title>
+    <link rel="icon" href="images/nsoft-logo-white.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body class="hidden">
-    <div class="centrado" id="onload">
-        <div class="lds-facebook">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <header>
-        <nav id="nav" class="nav1">
-            <div class="contenedor-nav">
-                <div class="logo">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="enlaces" id="enlaces">
-                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
-                    <a href="#" id="enlace-equipo" class="btn-header">Conceptos</a>
-                    <a href="#" id="enlace-servicio" class="btn-header">Ventajas</a>
-                    <a href="#" id="enlace-trabajo" class="btn-header">Herramientas</a>
-                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
-                </div>
-                <div class="icono" id="open">
-                    <span>&#9776;</span>
-                </div>
-            </div>
-        </nav>
-        <div class="textos">
-            <h1>Proyecto de Finanzas</h1>
-            <h2>Pagina web diseñada para Freelancers</h2>
-        </div>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-9.87,38.97 C191.58,151.47 279.06,-44.89 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f200;"></path></svg></div>
-    </header>
-    <main>
-        <section class="team contenedor" id="equipo">
-            <h3>¿Qué es Freelancer?</h3>
-            <p class="after">Un freelancer es un trabajador independiente que ofrece trabajos específicos para empresas o personas, gestionando él mismo su tiempo y trabajo. </p>
-            <h3>¿Cómo surge la idea?</h3>
-            <p class="after">
-                Cualquier persona con responsabilidad que tenga habilidades, talentos o conocimientos puede trabajar como freelancer, ya que existen un montón de áreas de trabajo en las que puede desempeñarse, como: programador, diseñador gráfico, traductor, redactor
-                de contenido, fotógrafo, vendedor, profesor de clases particulares, organizador de eventos, y mucho más. Y pueden trabajar desde casa y a su propio ritmo, es el trabajo ideal en estos tiempos de cuarentena, donde nos toca vivir resguardados
-                en nuestras casas.
-            </p>
-            <div class="card">
-                <div class="content-card">
-                    <div class="people">
-                        <a href="https://rockcontent.com/es/blog/diseno-web/"><img src="img/people1.jpg" alt=""></a>
-                    </div>
-                    <div class="texto-team">
-                        <h4>Diseño Web</h4>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <div class="people">
-                        <a href="https://www.nobbot.com/pantallas/empezar-a-programar/"><img src="img/people2.jpg" alt=""></a>
-                    </div>
-                    <div class="texto-team">
-                        <h4>Programación</h4>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <div class="people">
-                        <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-el-marketing-digital-o-marketing-online"><img src="img/people3.jpg" alt=""></a>
-                    </div>
-                    <div class="texto-team">
-                        <h4>Marketing</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about" id="servicio">
-            <div class="contenedor">
-                <h3>Ventajas de ser Freelancer</h3>
-                <div class="servicios">
-                    <div class="caja-servicios">
-                        <img src="img/calendar.png" alt="">
-                        <h4>Horario Flexible</h4>
-                        <p>Puedes trabajar a tu propio ritmo, elegir tus propios horarios. Puedes trabajar durante el dia o durante la noche, tu eliges.</p>
-                    </div>
-                    <div class="caja-servicios">
-                        <img src="img/client.png" alt="">
-                        <h4>Eliges a tus clientes</h4>
-                        <p>Puedes elegir trabajar con las personas que requieran tu servicio, si no te agrada su filosofia, puedes elegir no trabajar con ellos.</p>
-                    </div>
-                    <div class="caja-servicios">
-                        <img src="img/work.png" alt="">
-                        <h4>Trabajas desde casa</h4>
-                        <p>No hay nada mejor que eso en estos momentos de cuarentena. Puedes hacer muchas ganancias desde tu propia casa!!!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="work contenedor" id="trabajo">
-            <h3>Elige tu área de trabajo</h3>
-            <p class="after">Puedes elegir un área donde te desempeñarás como trabajador freelance. Tienes enlaces a paginas relacionadas, videos sobre cada area y tambien informacion basica si deseas aprender. Buena Suerte!!!</p>
-            <div class="botones-work">
-                <ul>
-                    <li class="filter active" data-nombre='todos'>Todos</li>
-                    <li class="filter" data-nombre='diseño'>Diseño</li>
-                    <li class="filter" data-nombre='programacion'>Programacion</li>
-                    <li class="filter" data-nombre='marketing'>Marketing</li>
-                </ul>
-            </div>
-            <div class="galeria-work">
-                <div class="cont-work programacion">
-                    <div class="img-work">
-                        <a href="https://www.yeeply.com/blog/6-consejos-ser-programador-freelance-de-exito/"><img src="img/programacion1.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Programacion</h4>
-                    </div>
-                </div>
-                <div class="cont-work programacion">
-                    <div class="img-work">
-                        <a href="https://youtu.be/OyetO_iaZJA"><img src="img/programacion2.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Video sobre Programacion</h4>
-                    </div>
-                </div>
-                <div class="cont-work programacion">
-                    <div class="img-work">
-                        <a href="https://programacionymas.com/guia-de-inicio/programacion-y-mas"><img src="img/programacion3.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Aprende sobre Programacion</h4>
-                    </div>
-                </div>
-                <div class="cont-work diseño">
-                    <div class="img-work">
-                        <a href="https://www.lifestylealcuadrado.com/disenador-web-freelance/"><img src="img/diseño1.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Diseño Web</h4>
-                    </div>
-                </div>
-                <div class="cont-work diseño">
-                    <div class="img-work">
-                        <a href="https://youtu.be/D4fsQ3aQYOw"><img src="img/diseño2.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Video de Diseño Web</h4>
-                    </div>
-                </div>
-                <div class="cont-work diseño">
-                    <div class="img-work">
-                        <a href="https://www.ingeniovirtual.com/que-es-un-disenador-web/"><img src="img/diseño3.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Aprende sobre el Diseño Web</h4>
-                    </div>
-                </div>
-                <div class="cont-work marketing">
-                    <div class="img-work">
-                        <a href="https://www.silviamazzoli.com/ser-freelance-de-marketing-digital/"><img src="img/marketing1.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Marketing Digital</h4>
-                    </div>
-                </div>
-                <div class="cont-work marketing">
-                    <div class="img-work">
-                        <a href="https://youtu.be/SO4qg-vfAkw"><img src="img/marketing2.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Video de Marketing</h4>
-                    </div>
-                </div>
-                <div class="cont-work marketing">
-                    <div class="img-work">
-                        <a href="https://rockcontent.com/es/blog/marketing-digital/"><img src="img/marketing3.jpeg" alt=""></a>
-                    </div>
-                    <div class="textos-work">
-                        <h4>Aprende sobre Marketing Digital</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="contacto">
-        <div class="footer contenedor">
-            <div class="marca-logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="iconos">
-                <a href="https://wa.me/69176549" class="fab fa-whatsapp"></a>
-                <a href="https://www.facebook.com/groups/357466188044834/" class="fab fa-facebook-square"></a>
-                <a href="https://youtu.be/sBUEgdHjcNE" class="fab fa-youtube"></a>
-            </div>
-            <h3>Diseñado por: Oliver Carranza</h3>
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/nsoft-logo-3.png" alt="logo-bookmark" width="30%" height="30%">
         </div>
 
-    </footer>
-    <script src="js/jquery.js"></script>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#features">Productos</a>
+            <a href="#download">Proceso</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- navbar sections starts  -->
+
+   
+    <!-- home section stars  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Desarrollamos Software a tu Medida</h1>
+            <p>Optimiza los procesos de tu empresa, toma decisiones acertadas y potencia cada área de tu negocio con soluciones de software a medida. Toma el control de tu empresa con NSoft.</p>
+
+            <a href="https://wa.link/p4r5r7" class="home-btn">Contáctanos ahora!</a>
+        </div>
+
+
+        <div class="image">
+            <img src="images/software_1.png" alt="illustration-hero">
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features sectin starts  -->
+
+    <section class="features" id="features">
+        <div class="heading">
+            <h1>Nuestros Productos</h1>
+            <p>Ofrecemos una variedad de soluciones para proporcionarte el avance tecnológico y el salto de calidad que tu empresa necesita.</p>
+        </div>
+
+        <div class="row">
+
+            <!-- 1 Tab  -->
+            <div class="image">
+                <img src="images/web_design_1.png" class="web-design">
+            </div>
+
+            <div class="content">
+                <h1>Páginas web</h1>
+                <p>Transforma tu empresa con nuestras páginas web personalizadas, diseñadas para impulsar tu presencia en línea y maximizar tu impacto.</p>
+                <!-- <a href="#" class="all-btn">Más info</a> -->
+            </div>
+            <hr>
+
+            <!-- 2 Tab  -->
+            <div class="content">
+                <h1>Sistemas ERP</h1>
+                <p>Transforma la gestión de tu empresa con nuestro Sistema ERP a medida, que integra todas tus operaciones en una única plataforma. Optimiza y controla cada proceso de tu negocio ahora.</p>
+                <!-- <a href="#" class="all-btn">Más info</a> -->
+            </div>
+
+            <div class="image">
+                <img src="images/erp.png" alt="illustration-features-tab-2">
+            </div>
+            <hr>
+
+            <!-- 3 Tab  -->
+            <div class="image">
+                <img src="images/apps_movil_1.png" alt="illustration-features-tab-3">
+            </div>
+
+            <div class="content">
+                <h1>Diseño de Apps Móviles</h1>
+                <p>Lleva tu empresa/startup al siguiente nivel con nuestras Aplicaciones Móviles a medida, diseñadas para ofrecer una experiencia de usuario excepcional y maximizar tu impacto.</p>
+                <!-- <a href="#" class="all-btn">Más info</a> -->
+            </div>
+            <hr>
+
+            <!-- 4 Tab  -->
+            <div class="content">
+                <h1>Integración de CRM</h1>
+                <p>Transforma tu estrategia de ventas con nuestra integración de CRM, con la que optimizarás toda la información de tus clientes para una gestión eficiente y efectiva.</p>
+                <!-- <a href="#" class="all-btn">Más info</a> -->
+            </div>
+
+            <div class="image">
+                <img src="images/crm.png" alt="illustration-features-tab-2">
+            </div>
+            <hr>
+        </div>
+    </section>
+
+
+    <!-- features sectin ends -->
+
+
+    <!-- downloads section starts  -->
+
+    <section class="download" id="download">
+        <div class="heading">
+            <h1>Nuestro Proceso</h1>
+            <p>Estamos convencidos de que siempre existe una manera de hacer que las cosas pasen. Estamos listos para escuchar tu idea, materializarla y abordar los grandes desafíos que nos espera.</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/idea_3112581.png" class="logo-download">
+
+                <h3>Idea</h3>
+                <p>Analizamos tu idea y al mismo tiempo analizamos la mejor manera para llevarla acabo.</p>
+            </div>
+            
+            <div class="box">
+                <img src="images/implementation_680268.png" class="logo-download">
+
+                <h3>Implementación</h3>
+                <p>Materializamos tu idea con las mejores tecnologías una vez que la tengamos bien definida.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/support_1341866.png" class="logo-download">
+
+                <h3>Soporte</h3>
+                <p>Una vez concluida la implementación, te brindamos el apoyo necesario para seguir adelante.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- downloads section ends -->
+
+
+
+    <!-- footer section starts  -->
+
+   <section class="footer" id="footer">
+       <div class="box-container">
+           <div class="box">
+                <img src="images/nsoft-logo-2.png" alt="logo-opera" width="90%" height="90%">
+           </div>
+
+           <div class="box">
+               <h3>Navegación</h3>
+               <a href="#"><i class="fas fa-chevron-right"></i>Inicio</a>
+               <a href="#features"><i class="fas fa-chevron-right"></i>Productos</a>
+               <a href="#download"><i class="fas fa-chevron-right"></i>Proceso</a>
+               <a href="#footer"><i class="fas fa-chevron-right"></i>Contacto</a>
+            </div>
+
+           <div class="box">
+               <h3>Contacto</h3>
+               <a href="https://wa.link/p4r5r7"><i class="fas fa-phone"></i>+591 75363339</a>
+               <a href="https://wa.link/iiyrai"><i class="fas fa-phone"></i>+591 69176549</a>
+               <a href="mailto:nsoftbolivia@gmail.com"><i class="fas fa-envelope"></i>nsoftbolivia@gmail.com</a>
+               <a href="https://maps.app.goo.gl/DSorMihApD4qbfaL6"><i class="fas fa-map-marker-alt"></i>Santa Cruz, Bolivia</a>
+           </div>
+
+           <div class="box">
+               <h3>Siguenos</h3>
+               <a href="https://www.facebook.com/share/e8FLXP7pD2KZgv1w/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i>Facebook</a>
+               <a href="https://www.instagram.com/nsoft.bo?igsh=MXI3bHYyNG0xeTdwYw=="><i class="fab fa-instagram"></i>Instagram</a>
+               <a href="https://www.linkedin.com/company/nsoft-bo/"><i class="fab fa-linkedin"></i>Linkedin</a>
+           </div>
+       </div>
+
+
+       <div class="credit">
+            Copyright © <span id="current-year"></span> | NSoft - Bolivia
+       </div>
+   </section>
+
+    <!-- footer section ends -->
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.link/p4r5r7" class="whatsapp-button" target="_blank">
+        <img src="images/icon-whatsapp-50.png" alt="WhatsApp">
+    </a>
+
+    <!-- Botón Flotante de Desplazamiento hacia Arriba -->
+    <div class="scroll-top-button" id="scrollTopButton">
+        <img src="images/flecha-hacia-arriba.png" alt="Subir">
+    </div>
+
     <script src="js/main.js"></script>
-    <script src="js/filtro.js"></script>
 </body>
 
 </html>
